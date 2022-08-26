@@ -10,6 +10,14 @@
 
 
 /* ________________________________-main_________________________________ */
+.bars{
+    display: none;
+    visibility: hidden;
+}
+
+.icons-1{
+    display: none;
+}
 .main{
     display: flex;
 
@@ -219,3 +227,72 @@ a{
     object-fit: cover;
 }
 
+
+
+
+@media screen and (max-width: 1000px)
+{
+    .main{
+        flex-direction: column;
+    }
+
+    .navbar{
+        display: none;
+
+    }
+
+    .bars{
+        display: inline-block;
+        font-size: x-large;
+        margin: 20px;
+    }
+
+    .fa{
+        transform: rotate(0deg);
+        margin: 0 20px;
+    }
+
+    .icons{
+        display: none;
+    }
+
+    .upper-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .icons-1{
+        display: flex;
+        column-gap: 20px;
+        /* position: absolute; */
+        display: inline-block;
+        top: 0;
+        /* transform: rotate); */
+
+    }
+
+    .package-btn{
+        padding: 3px;
+        font-size: medium;
+        top: 260px;
+    }
+
+    .features{
+        transform: rotate(-90deg);
+    }
+
+    .feature{
+        transform: rotate(90deg);
+        margin: 40px 0px;
+        font-size: x-small;
+    }
+
+    .last-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: -250px;
+        /* margin-top: 40px; */
+    }
+}
